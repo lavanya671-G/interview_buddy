@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">LOGO</div>
+            <div class="header-icons">
+                <span class="icon">🔔</span>
+                <span class="icon">👤</span>
+            </div>
+        </header>
+
+        <section class="profile">
+            <div class="profile-info">
+                <h2>Dave Richards</h2>
+                <p>dave@mail.com</p>
+                <p>+91 8332883854</p>
+            </div>
+            <nav class="tabs">
+                <button class="tab active">Basic info</button>
+                <button class="tab">Education & Skills</button>
+                <button class="tab">Experience</button>
+            </nav>
+        </section>
+        
+        <section class="work-experience">
+            <h3>Work Experience</h3>
+            <div class="input-group">
+                <label>Domain</label>
+                <input type="text" placeholder="e.g. Technology"/>
+            </div>
+            <div class="input-group">
+                <label>Sub-domain</label>
+                <input type="text" placeholder="e.g. MERN Stack"/>
+            </div>
+            <div class="input-group">
+                <label>Experience</label>
+                <select>
+                    <option>Select an option</option>
+                </select>
+            </div>
+            <!-- Repeat above block as needed -->
+        </section>
+
+        <section class="linkedin-resume">
+            <h3>LinkedIn</h3>
+            <input type="url" placeholder="linkedin.com/in/mrbean"/>
+            <h3>Resume</h3>
+            <button>View</button>
+        </section>
+
+        <section class="skills-projects">
+            <h3>Skills & Projects</h3>
+            <div class="input-group">
+                <label>Skills</label>
+                <textarea placeholder="Enter here"></textarea>
+            </div>
+            <div class="input-group">
+                <label>Projects</label>
+                <textarea placeholder="Enter here"></textarea>
+            </div>
+        </section>
+
+        <section class="user-management">
+            <h3>Users</h3>
+            <table>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>User name</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Dave Richards</td>
+                    <td>dave@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Abhishek Hari</td>
+                    <td>hari@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nishta Gupta</td>
+                    <td>nishta@mail.com</td>
+                </tr>
+            </table>
+            <button class="add-user">+ Add user</button>
+        </section>
+    </div>
+</body>
+</html>

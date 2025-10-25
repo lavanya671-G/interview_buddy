@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="App.js" defer></script> <!-- Link to your JS file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="user-info">
+            <div class="notifications">🔔</div>
+            <div class="profile-icon">👤</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="user-list">
+            <h2>Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dave Richards</td>
+                        <td>dave@mail.com</td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Abhishek Hari</td>
+                        <td>hari@mail.com</td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nishta Gupta</td>
+                        <td>nishta@mail.com</td>
+                        <td>
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="add-user-btn">+ Add User</button>
+        </section>
+
+        <!-- Add User Modal -->
+        <div class="modal" id="addUserModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Add User</h2>
+                <form id="addUserForm">
+                    <label for="username">Name of the user</label>
+                    <input type="text" id="username" placeholder="Type here" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Type here" required>
+
+                    <label for="contact">Contact</label>
+                    <input type="text" id="contact" placeholder="Type here" required>
+
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="active">Active</option>
+                        <option value="pending">Pending Approval</option>
+                        <option value="blocked">Blocked</option>
+                    </select>
+
+                    <button type="submit">Add</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Skills & Projects Section -->
+        <section class="skills-projects">
+            <h2>Skills & Projects</h2>
+            <label for="skills">Skills</label>
+            <textarea id="skills" placeholder="Enter here"></textarea>
+
+            <label for="projects">Projects</label>
+            <textarea id="projects" placeholder="Enter here"></textarea>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <form id="workExperienceForm">
+                <div class="experience-entry">
+                    <label for="domain">Domain</label>
+                    <input type="text" id="domain" placeholder="e.g. Technology" required>
+
+                    <label for="subdomain">Sub-domain</label>
+                    <input type="text" id="subdomain" placeholder="e.g. MERN Stack" required>
+
+                    <label for="experience">Experience</label>
+                    <select id="experience">
+                        <option value="select">Select an option</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid">Mid</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+
+                <button type="button" class="add-experience-btn">Add another experience</button>
+            </form>
+
+            <div class="linkedin-section">
+                <label for="linkedin">LinkedIn Profile URL</label>
+                <input type="url" id="linkedin" placeholder="linkedin.com/in/mrbean">
+            </div>
+
+            <div class="resume-section">
+                <label for="resume">Resume</label>
+                <input type="file" id="resume" accept=".pdf">
+            </div>
+        </section>
+
+        <!-- Education & Skills Section -->
+        <section class="education-skills">
+            <h2>Education & Skills</h2>
+            <form id="educationForm">
+                <label for="school">School / College</label>
+                <input type="text" id="school" placeholder="e.g. Lincoln College" required>
+
+                <label for="course">Course</label>
+                <input type="text" id="course" placeholder="e.g. Computer Science Engineering" required>
+
+                <label for="degree">Highest Degree or Equivalent</label>
+                <input type="text" id="degree" placeholder="e.g. Bachelors in Technology" required>
+                
+                <label for="year">Year of Completion</label>
+                <input type="number" id="year" placeholder="YYYY" required>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Your Company</p>
+    </footer>
+</body>
+</html>
